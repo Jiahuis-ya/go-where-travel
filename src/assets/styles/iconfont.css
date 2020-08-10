@@ -1,0 +1,30 @@
+@font-face {font-family: "iconfont";
+  src: url('./iconfont/iconfont.eot?t=1583156404026'); /* IE9 */
+  src: url('./iconfont/iconfont.eot?t=1583156404026#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQwAAsAAAAACMQAAAPiAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDXgqEEINEATYCJAMcCxAABCAFhG0HZBugBxFVnB/Jfh7Yto70GVSYGs4Tm8ZitMi+BwHhZbMImivxMpgHkERD999cjrUcwsQypsROP/2PtN9f6aUp4zxOoxRCIiQNEECQ9n8up9d6fmCtb2e5jLlsTFsbo7AXBxTQ2JukxBLVjuV1TQqa9dNqCMAhAekQxUqUq4aNhnQSgGjXumVj7JoGPYIKbLnZM1IjJmFgy9HyHDBRf1+8IYuwQWIoyFqVWhRvRiEXd5Ea5A2inrrCqv1MgDsOFJAO0CBG9FoGoXJfOhRO/JuaakAgNhLTxZWunxvoJnEXeR7q2aRUEEj/4IFCYyIRGCBMINQfgFqW3wQXjkGBKzFocP0449JAEDMmTQIYBLiLEjAAsOSIQMABRgA3ILJ02q8QCPyo4Ph+vlD/gGBL9Q3eti+enr8/e8jOgwmNBQfq15ixw3Gqzw6ftiOyTnHDMbuiq6nBa30hY1fTaP7lsVcHXxlzqe/1x89uP3l01316t++Na9EzblS7dqt6e5aImU9r3rzT99q1atevV795s+aNG/WYqIZhVVkd72kcPm1MZI0Zg6OiZo6NqD59UPuaLVrWaEbfZi3yPE1bL9F9uUXeT6SfpTrkr3wwfbj3WLH4w7miG54mP+gfvjmm54yCUz+EtAytFdoyJNsMu3oV2pPkTePV2z6sdHDqbLOabGm6RTJzZu3mu9uQ6crbTvEm1r2ZZkr7fvGn5CoTWaVLg3ZpPv36maYmXap2KRtJ/K3N9umfv/QevRcL9wlU//xZe++vX3v+jpW7dskxciyIxjqskgVsqPVzfdL/aW7JG3mmZupb+ZCaVQWKFe1LYvoUK7Z9eziFPh8LnqsA4O32aulc6gp4R9VbFQTeYvVUNQPvkHyvCgNo1KBsUwE7Dl070jAo3zfbpwG4M651Zp21D+dfSpnN/elifQpySpDwidbSkZjRrJLLTQhwH3KgAJCAQ4vgVztCebCfLGJ2KAhsIkqQWMQHhU0ynCalAwMf2cDEpiCIHGkdx/uEYXVifkAabwRCsA9IgQ6CEuyL06QfGCL9wRScAkeNhjP6pKh1b8sYCMYQvsBEVCqml54JP6H2ecBVvibfkJ1xwipDpmbwiCXyHn3cXa9FFCimAg5oPcxzAsuUYiTzRMRuFhlb9D1pHlFR6SmKoYBAMRB6AUaElJQsL3qtz58gzcsFeCRvzHiDmGOqBytzyxm4o6Sclfcu5zh32poQClAYKYADMqGc+giw/c1SKCLmkhUea2OBC6m5kvn5suI5VwAOcoiVFEpoYQhTWMLGeBFo7DxNqbmlnZA5qOXIO09NNjqRQWqCUsjPIrKvSgUAAA==') format('woff2'),
+  url('./iconfont/iconfont.woff?t=1583156404026') format('woff'),
+  url('./iconfont/iconfont.ttf?t=1583156404026') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('./iconfont/iconfont.svg?t=1583156404026#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* .iconsousuo:before {
+  content: "\e602";
+}
+
+.iconright:before {
+  content: "\e6a0";
+}
+
+.iconjiantou-copy:before {
+  content: "\e609";
+} */
+/* 设置中文的 */
+
