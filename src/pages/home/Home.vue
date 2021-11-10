@@ -18,54 +18,54 @@ import HomeWeekend from './components/Weekend'
 import axios from 'axios'
 import { mapState } from 'vuex'
 export default{
-    name: 'Home',
-    components: {
-        // HomeHeader: HomeHeader或
-        'home-header': HomeHeader,
-        'home-swiper': HomeSwiper,
-        'home-icon': HomeIcon,
-        'home-recommend': HomeRecommend,
-        'home-weekend': HomeWeekend
+  name: 'Home',
+  components: {
+    // HomeHeader: HomeHeader或
+    'home-header': HomeHeader,
+    'home-swiper': HomeSwiper,
+    'home-icon': HomeIcon,
+    'home-recommend': HomeRecommend,
+    'home-weekend': HomeWeekend
+  },
+  computed: {
+    ...mapState({
+      curCity: 'city'
+    })
+  },
+  data: function () {
+    return {
+      lastCity: '',
+      swiperList: [],
+      iconList: [],
+      recommendList: [],
+      weekendList: []
+    }
+  },
+  methods: {
+    getHomeInfo: function () {
+      axios.get('/api/index.json?city=' + this.curCity)
+        .then(this.getHomeInfoSuccess)
     },
-    computed: {
-      ...mapState({
-        curCity: 'city'
-      })
-    },
-    data: function () {
-      return {
-        lastCity: '',
-        swiperList: [],
-        iconList: [],
-        recommendList: [],
-        weekendList: []
-      }
-    },
-    methods: {
-        getHomeInfo: function () {
-            axios.get('/api/index.json?city=' + this.curCity)
-              .then(this.getHomeInfoSuccess)
-        },
-        getHomeInfoSuccess: function (res) {
-          if (res.data.ret && res.data.data) {
-            var data = res.data.data
-            this.swiperList = data.swiperList
-            this.iconList = data.iconsList
-            this.recommendList = data.recommendList
-            this.weekendList = data.weekendList
-          }
-        }
-    },
-    mounted: function () {
-      this.lastCity = this.curCity
-      this.getHomeInfo()
-    },
-    activated: function () {
-      if (this.lastCity !== this.curCity) {
-        this.lastCity = this.curCity
-        this.getHomeInfo()
+    getHomeInfoSuccess: function (res) {
+      if (res.data.ret && res.data.data) {
+        var data = res.data.data
+        this.swiperList = data.swiperList
+        this.iconList = data.iconList
+        this.recommendList = data.recommendList
+        this.weekendList = data.weekendList
       }
     }
+  },
+  mounted: function () {
+    this.lastCity = this.curCity
+    this.getHomeInfo()
+  },
+  activated: function () {
+    if (this.lastCity !== this.curCity) {
+      this.lastCity = this.curCity
+      this.getHomeInfo()
+    }
+  }
 }
 </script>
 
