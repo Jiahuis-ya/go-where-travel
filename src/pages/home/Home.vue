@@ -43,7 +43,7 @@ export default{
   },
   methods: {
     getHomeInfo: function () {
-      axios.get('/travel-h5-page/api/index.json?city=' + this.curCity)
+      axios.get('/travel2/api/index.json?city=' + this.curCity)
         .then(this.getHomeInfoSuccess)
     },
     getHomeInfoSuccess: function (res) {
