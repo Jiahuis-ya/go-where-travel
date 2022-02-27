@@ -36,7 +36,7 @@ export default{
     methods: {
       getDetailInfo: function () {
         // axios.get('api/detail.json?id' + this.$route.params.id)
-        axios.get('api/detail.json', {
+        axios.get('/travel-h5-page/api/detail.json', {
           params: {
             id: this.$route.params.id
           }

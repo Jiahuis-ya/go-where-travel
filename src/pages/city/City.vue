@@ -25,7 +25,7 @@ export default{
     },
     methods: {
       getCityInfo: function () {
-        axios.get('/api/city.json')
+        axios.get('/travel-h5-page/api/city.json')
           .then(this.getCityInfoSuccess)
       },
       getCityInfoSuccess: function (res) {
